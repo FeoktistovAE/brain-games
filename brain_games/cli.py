@@ -1,5 +1,10 @@
 #!/usr/bin/env python
+"""Must be imported by brain_games.py."""
+
+import prompt
+
+
 def welcome_user():
-    import prompt
+    """Return user's welcome by using prompt.string package."""
     name = prompt.string('May i have your name? ')
-    print(f'Hello, {name}!')
+    return 'Hello, {}!'.format(name)
