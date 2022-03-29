@@ -7,5 +7,5 @@ jobs:
     steps:
       - name: my-step
       - run: make setup
-      - run: make lint
+             make lint
      
