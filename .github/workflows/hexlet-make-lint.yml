@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: make-install
-        run: 
+        run: |
              pip install poetry
              make install
       - name: make-publish
-        run:
+        run: |
              make publish       
       - name: make-lint
-        run: 
+        run: |
              make lint
      
