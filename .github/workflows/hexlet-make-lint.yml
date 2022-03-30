@@ -9,6 +9,8 @@ jobs:
         run: 
              pip install poetry
              make install
+      - name: make-publish
+        run:
              make publish       
       - name: make-lint
         run: 
