@@ -2,10 +2,14 @@ name: make-lint
 on: push
 
 jobs:
-  my-job:
+  make-setup:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-      - run: make setup
+      - name: make-install
+        run: 
+             pip install poetry
+             make install
+      - name: make-lint
+        run: 
              make lint
      
