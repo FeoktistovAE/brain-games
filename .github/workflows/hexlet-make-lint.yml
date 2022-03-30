@@ -9,10 +9,7 @@ jobs:
       - name: make-install
         run: |
              pip install poetry
-             poetry install
-      - name: make-publish
-        run: |
-             make publish       
+             poetry install   
       - name: make-lint
         run: |
              make lint
