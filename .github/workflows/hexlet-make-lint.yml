@@ -8,7 +8,7 @@ jobs:
       - name: make-install
         run: 
              pip install poetry
-             make install
+             make setup
       - name: make-lint
         run: 
              make lint
