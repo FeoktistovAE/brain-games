@@ -1,4 +1,4 @@
-setup: install build publish package-install
+setup: install build publish
 
 install:
 	poetry install
@@ -12,3 +12,4 @@ package-install:
 	python3 -m pip install --user dist/*.whl
 lint:
 	poetry run flake8 brain_games
+
