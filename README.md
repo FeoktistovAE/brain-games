@@ -4,3 +4,4 @@
 https://asciinema.org/a/483225 - show brain-even
 ![example workflow](https://github.com/FeoktistovAE/python-project-lvl1/actions/workflows/hexlet-make-lint.yml/badge.svg)
 https://asciinema.org/a/484806 - show brain-calc and brain-even
+https://asciinema.org/a/484907 - show brain-gcd

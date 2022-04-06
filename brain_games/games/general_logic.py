@@ -5,7 +5,7 @@ import prompt
 
 
 def logic(expression_generator, action_to_do):
-    """Print user's welcome by using prompt.string package."""
+    """General logic for brain-games."""
     name = prompt.string('Welcome to the Brain Games!\nMay i have your name? ')
     print('Hello, {}!'.format(name))
     print(action_to_do)
