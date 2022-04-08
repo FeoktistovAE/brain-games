@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Must be imported by brain_calc.py."""
+"""Must be imported by brain_even.py."""
 from random import randint
 
 
