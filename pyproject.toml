@@ -2,7 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "The package consists of 5 logic games. Commands to run games: brain-calc, brain-even, brain-gcd, brain-prime, brain-progression"
-authors = ["Feoktistov Andrei, feoae@yandex.ru"]
+authors = ["Andrei Feoktistov <feoae@yandex.ru>"]
 packages = [
   { include = "brain_games" },
 ]
