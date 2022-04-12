@@ -3,10 +3,10 @@
 from random import randint
 
 
-action_to_do = 'Answer "yes" if the number is even, otherwise answer "no"'
+PRINT_ACTION = 'Answer "yes" if the number is even, otherwise answer "no"'
 
 
-def expression_generator():
+def expressions():
     number = randint(1, 100)
     if number % 2 == 0:
         answer = 'yes'

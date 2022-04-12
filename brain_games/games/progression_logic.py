@@ -3,10 +3,10 @@
 from random import randint, choice
 
 
-action_to_do = 'What number is missing in the progression?'
+PRINT_ACTION = 'What number is missing in the progression?'
 
 
-def expression_generator():
+def expressions():
     consequence = ''
     first_value = randint(1, 70)
     distance = randint(2, 9)

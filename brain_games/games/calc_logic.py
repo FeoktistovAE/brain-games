@@ -3,10 +3,10 @@
 from random import randint, choice
 
 
-action_to_do = 'What is the result of the expression?'
+PRINT_ACTION = 'What is the result of the expression?'
 
 
-def expression_generator():
+def expressions():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
     sum = ((number1 + number2), (str(number1) + ' + ' + str(number2)))

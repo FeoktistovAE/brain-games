@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 """The main script of the package."""
 
-from brain_games.games.general_logic import logic
-from brain_games.games.calc_logic import expression_generator, action_to_do
+from brain_games.general_logic import logic
+from brain_games.games import calc_logic
 
 
 def main():
     """Executiom of the entire programm."""
 
-    logic(expression_generator, action_to_do)
+    logic(calc_logic)
 
 
 if __name__ == '__main__':

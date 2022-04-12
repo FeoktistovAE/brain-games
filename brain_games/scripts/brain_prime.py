@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-from brain_games.games.general_logic import logic
-from brain_games.games.prime_logic import expression_generator, action_to_do
+from brain_games.general_logic import logic
+from brain_games.games import prime_logic
 
 
 def main():
-    logic(expression_generator, action_to_do)
+    logic(prime_logic)
 
 
 if __name__ == '__main__':

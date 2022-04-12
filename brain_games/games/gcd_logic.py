@@ -3,15 +3,12 @@
 from random import randint
 
 
-action_to_do = 'Find the greatest common divisor of given numbers.'
+PRINT_ACTION = 'Find the greatest common divisor of given numbers.'
 
 
-def expression_generator():
-    number1 = randint(1, 100)
-    number2 = randint(1, 100)
+def gcd(number1, number2):
     devider = 1
     deviders_list = ()
-    answer = 1
     while devider <= number1:
         if number1 % devider == 0:
             deviders_list += (devider,)
@@ -19,5 +16,11 @@ def expression_generator():
     for i in deviders_list:
         if number2 % i == 0:
             answer = i
+    return answer
+
+
+def expressions():
+    number1 = randint(1, 100)
+    number2 = randint(1, 100)
     expression = str(number1) + ' ' + str(number2)
-    return (answer, expression)
+    return (gcd(number1, number2), expression)

@@ -3,11 +3,10 @@
 from random import randint
 
 
-action_to_do = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+PRINT_ACTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def expression_generator():
-    number = randint(1, 100)
+def is_prime(number):
     deviders = range(1, number + 1)
     without_remainder = ()
     for i in deviders:
@@ -17,4 +16,9 @@ def expression_generator():
         answer = 'yes'
     else:
         answer = 'no'
-    return answer, number
+    return answer
+
+
+def expressions():
+    number = randint(1, 100)
+    return is_prime(number), number
