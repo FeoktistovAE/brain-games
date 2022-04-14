@@ -3,7 +3,7 @@
 from random import randint
 
 
-GAME_DESCRIBTION = 'Answer "yes" if the number is even, otherwise answer "no"'
+DESCRIBTION = 'Answer "yes" if the number is even, otherwise answer "no"'
 
 
 def expressions():

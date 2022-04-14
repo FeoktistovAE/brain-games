@@ -10,7 +10,7 @@ def gaming_engine(game_logic):
     """General logic for brain-games."""
     name = prompt.string('Welcome to the Brain Games!\nMay i have your name? ')
     print('Hello, {}!'.format(name))
-    print(game_logic.GAME_DESCRIBTION)
+    print(game_logic.DESCRIBTION)
 
     for i in range(FINAL_SCORE):
         (res, print_expression) = game_logic.expressions()

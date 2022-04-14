@@ -3,7 +3,7 @@
 from random import randint, choice
 
 
-GAME_DESCRIBTION = 'What number is missing in the progression?'
+DESCRIBTION = 'What number is missing in the progression?'
 
 
 def expressions():
