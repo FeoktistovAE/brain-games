@@ -7,4 +7,4 @@ import prompt
 def welcome_user():
     """Return user's welcome by using prompt.string package."""
     name = prompt.string('May I have your name? ')
-    return 'Hello, {}!'.format(name)
+    print('Hello, {}!'.format(name))

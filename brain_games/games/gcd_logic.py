@@ -3,7 +3,7 @@
 from random import randint
 
 
-PRINT_ACTION = 'Find the greatest common divisor of given numbers.'
+GAME_DESCRIBTION = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(number1, number2):

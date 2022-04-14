@@ -3,7 +3,7 @@
 from random import randint, choice
 
 
-PRINT_ACTION = 'What is the result of the expression?'
+GAME_DESCRIBTION = 'What is the result of the expression?'
 
 
 def expressions():
