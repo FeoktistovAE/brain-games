@@ -3,10 +3,10 @@
 from random import randint, choice
 
 
-DESCRIBTION = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 
 
-def expressions():
+def get_expressions():
     consequence = ''
     first_value = randint(1, 70)
     distance = randint(2, 9)
@@ -21,4 +21,4 @@ def expressions():
             current_value = str(first_value + counter,)
         consequence += current_value + ' '
         counter += distance
-    return answer, consequence
+    return answer, consequence[:-1]

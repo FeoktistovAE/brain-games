@@ -3,23 +3,24 @@
 
 import prompt
 
-FINAL_SCORE = 3
+NUMBER_OF_ROUNDS = 3
 
 
-def gaming_engine(game_logic):
+def start_the_game(game):
     """General logic for brain-games."""
     name = prompt.string('Welcome to the Brain Games!\nMay i have your name? ')
     print('Hello, {}!'.format(name))
-    print(game_logic.DESCRIBTION)
+    print(game.DESCRIPTION)
 
-    for i in range(FINAL_SCORE):
-        (res, print_expression) = game_logic.expressions()
+    for i in range(NUMBER_OF_ROUNDS):
+        (result, print_expression) = game.get_expressions()
         print(f'Question: {print_expression}')
         answer = prompt.string('Your answer: ')
-        if answer == str(res):
+        if answer == str(result):
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{res}'.")
-            print(f"Let's try again, {name}!'")
+            print(f"'{answer}' is wrong answer ;(. ", end='')
+            print(f"Correct answer was '{result}'.")
+            print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')

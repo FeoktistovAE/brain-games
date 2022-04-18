@@ -3,7 +3,7 @@
 from random import randint
 
 
-DESCRIBTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
@@ -13,12 +13,16 @@ def is_prime(number):
         if number % i == 0:
             without_remainder += (i,)
     if without_remainder == (1, number):
-        answer = 'yes'
+        answer = True
     else:
-        answer = 'no'
+        answer = False
     return answer
 
 
-def expressions():
+def get_expressions():
     number = randint(1, 100)
-    return is_prime(number), number
+    if is_prime(number) is True:
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return answer, number

@@ -3,7 +3,7 @@
 from random import randint
 
 
-DESCRIBTION = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(number1, number2):
@@ -19,7 +19,7 @@ def gcd(number1, number2):
     return answer
 
 
-def expressions():
+def get_expressions():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
     expression = str(number1) + ' ' + str(number2)
