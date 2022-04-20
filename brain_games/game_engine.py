@@ -3,16 +3,16 @@
 
 import prompt
 
-NUMBER_OF_ROUNDS = 3
+ROUNDS = (1, 2, 3)
 
 
-def start_the_game(game):
+def start(game):
     """General logic for brain-games."""
     name = prompt.string('Welcome to the Brain Games!\nMay i have your name? ')
     print('Hello, {}!'.format(name))
     print(game.DESCRIPTION)
 
-    for i in range(NUMBER_OF_ROUNDS):
+    for round in ROUNDS:
         (result, print_expression) = game.get_expressions()
         print(f'Question: {print_expression}')
         answer = prompt.string('Your answer: ')

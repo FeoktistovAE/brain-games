@@ -7,18 +7,18 @@ DESCRIPTION = 'What number is missing in the progression?'
 
 
 def get_expressions():
-    consequence = ''
     first_value = randint(1, 70)
-    distance = randint(2, 9)
+    last_value = 150
+    step = randint(2, 9)
     spread = randint(6, 11)
-    counter = 0
     random_choice = choice(range(spread))
-    for i in range(spread):
-        if i == random_choice:
-            answer = first_value + counter
+    consequence = range(first_value, last_value, step)
+    progression = ''
+    for index in range(spread):
+        if index == random_choice:
+            answer = consequence[index]
             current_value = '..'
         else:
-            current_value = str(first_value + counter,)
-        consequence += current_value + ' '
-        counter += distance
-    return answer, consequence[:-1]
+            current_value = str(consequence[index])
+        progression += current_value + ' '
+    return answer, progression[:-1]

@@ -12,11 +12,7 @@ def is_prime(number):
     for i in deviders:
         if number % i == 0:
             without_remainder += (i,)
-    if without_remainder == (1, number):
-        answer = True
-    else:
-        answer = False
-    return answer
+    return without_remainder == (1, number)
 
 
 def get_expressions():
