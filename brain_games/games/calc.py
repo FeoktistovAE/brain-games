@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """Must be imported by brain_calc.py."""
 from random import randint, choice
 
@@ -6,7 +5,7 @@ from random import randint, choice
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def get_expressions():
+def get_data():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
     signs = ('+', '-', '*')

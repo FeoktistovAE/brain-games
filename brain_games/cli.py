@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """Must be imported by brain_games.py."""
 
 import prompt

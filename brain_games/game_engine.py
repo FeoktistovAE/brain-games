@@ -1,9 +1,8 @@
-#!/usr/bin/env python
 """General logic module."""
 
 import prompt
 
-ROUNDS = (1, 2, 3)
+ROUNDS = 3
 
 
 def start(game):
@@ -12,9 +11,9 @@ def start(game):
     print('Hello, {}!'.format(name))
     print(game.DESCRIPTION)
 
-    for round in ROUNDS:
-        (result, print_expression) = game.get_expressions()
-        print(f'Question: {print_expression}')
+    for round in range(ROUNDS):
+        (result, expression) = game.get_data()
+        print(f'Question: {expression}')
         answer = prompt.string('Your answer: ')
         if answer == str(result):
             print('Correct!')

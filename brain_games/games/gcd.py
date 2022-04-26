@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """Must be imported by brain_gcd.py."""
 from random import randint
 
@@ -19,7 +18,7 @@ def gcd(number1, number2):
     return answer
 
 
-def get_expressions():
+def get_data():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
     expression = str(number1) + ' ' + str(number2)
