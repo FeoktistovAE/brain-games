@@ -17,7 +17,7 @@ def is_prime(number):
 def get_data():
     number = randint(1, 100)
     if is_prime(number) is True:
-        answer = 'yes'
+        result = 'yes'
     else:
-        answer = 'no'
-    return answer, number
+        result = 'no'
+    return result, number

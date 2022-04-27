@@ -14,12 +14,12 @@ def gcd(number1, number2):
         devider += 1
     for i in deviders_list:
         if number2 % i == 0:
-            answer = i
-    return answer
+            result = i
+    return result
 
 
 def get_data():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
-    expression = str(number1) + ' ' + str(number2)
+    expression = f"{number1} {number2}"
     return (gcd(number1, number2), expression)

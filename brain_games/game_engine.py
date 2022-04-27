@@ -11,7 +11,7 @@ def start(game):
     print('Hello, {}!'.format(name))
     print(game.DESCRIPTION)
 
-    for round in range(ROUNDS):
+    for _ in range(ROUNDS):
         (result, expression) = game.get_data()
         print(f'Question: {expression}')
         answer = prompt.string('Your answer: ')

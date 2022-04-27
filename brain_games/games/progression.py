@@ -8,12 +8,12 @@ DESCRIPTION = 'What number is missing in the progression?'
 def get_data():
     first_value = randint(1, 70)
     step = randint(2, 9)
-    spread = randint(6, 11)
-    last_value = first_value + (spread - 1) * step
-    random_choice = choice(range(spread - 1))
+    progression_size = randint(6, 11)
+    last_value = first_value + (progression_size - 1) * step
+    random_index = choice(range(progression_size - 1))
     consequence = range(first_value, last_value, step)
     progression = [str(item) for item in consequence]
-    answer = int(progression[random_choice])
-    progression[random_choice] = '..'
+    result = progression[random_index]
+    progression[random_index] = '..'
     progression = (' '.join(progression))
-    return answer, progression
+    return result, progression

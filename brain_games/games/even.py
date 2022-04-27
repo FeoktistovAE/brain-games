@@ -8,7 +8,7 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no"'
 def get_data():
     number = randint(1, 100)
     if number % 2 == 0:
-        answer = 'yes'
+        result = 'yes'
     else:
-        answer = 'no'
-    return answer, number
+        result = 'no'
+    return result, number
