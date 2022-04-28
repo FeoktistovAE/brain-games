@@ -6,18 +6,18 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    deviders = range(1, number + 1)
+    if number < 2:
+        return False
+    deviders = range(2, number + 1)
     for devider in deviders:
         if number % devider == 0:
-            if devider != 1 and devider != number:
+            if devider != number:
                 return False
     return True
 
 
-def get_data():
+def get_expression_and_result():
     number = randint(1, 100)
-    if is_prime(number) is True:
-        result = 'yes'
-    else:
-        result = 'no'
-    return result, number
+    if is_prime(number):
+        return number, 'yes'
+    return number, 'no'

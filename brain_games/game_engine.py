@@ -12,7 +12,7 @@ def start(game):
     print(game.DESCRIPTION)
 
     for _ in range(ROUNDS):
-        (result, expression) = game.get_data()
+        expression, result = game.get_expression_and_result()
         print(f'Question: {expression}')
         answer = prompt.string('Your answer: ')
         if answer == str(result):

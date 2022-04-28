@@ -5,7 +5,7 @@ from random import randint, choice
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def get_data():
+def get_expression_and_result():
     first_value = randint(1, 70)
     step = randint(2, 9)
     progression_size = randint(6, 11)
@@ -16,4 +16,4 @@ def get_data():
     result = progression[random_index]
     progression[random_index] = '..'
     progression = (' '.join(progression))
-    return result, progression
+    return progression, result

@@ -18,8 +18,8 @@ def gcd(number1, number2):
     return result
 
 
-def get_data():
+def get_expression_and_result():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
     expression = f"{number1} {number2}"
-    return (gcd(number1, number2), expression)
+    return expression, gcd(number1, number2)
