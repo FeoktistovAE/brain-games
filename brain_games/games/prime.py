@@ -1,5 +1,6 @@
 """Must be imported by brain_prime.py."""
 from random import randint
+import math
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -8,11 +9,10 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 def is_prime(number):
     if number < 2:
         return False
-    deviders = range(2, number + 1)
+    deviders = range(2, int(math.sqrt(number)) + 1)
     for devider in deviders:
         if number % devider == 0:
-            if devider != number:
-                return False
+            return False
     return True
 
 
