@@ -1,4 +1,3 @@
-"""Must be imported by brain_calc.py."""
 from random import randint, choice
 
 

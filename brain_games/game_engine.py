@@ -1,12 +1,9 @@
-"""General logic module."""
-
 import prompt
 
 ROUNDS = 3
 
 
 def start(game):
-    """General logic for brain-games."""
     name = prompt.string('Welcome to the Brain Games!\nMay i have your name? ')
     print('Hello, {}!'.format(name))
     print(game.DESCRIPTION)

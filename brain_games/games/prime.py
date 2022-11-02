@@ -1,4 +1,3 @@
-"""Must be imported by brain_prime.py."""
 from random import randint
 import math
 

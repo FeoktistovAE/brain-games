@@ -1,4 +1,3 @@
-"""Must be imported by brain_gcd.py."""
 from random import randint
 
 

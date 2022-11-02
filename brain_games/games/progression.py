@@ -1,4 +1,3 @@
-"""Must be imported by brain_progression.py."""
 from random import randint
 
 

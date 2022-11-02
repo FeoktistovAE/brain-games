@@ -1,4 +1,3 @@
-"""Must be imported by brain_even.py."""
 from random import randint
 
 
