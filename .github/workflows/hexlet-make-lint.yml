@@ -9,7 +9,8 @@ jobs:
       - name: make-install
         run: |
              pip install poetry
-             poetry install   
+             poetry install
+        env: PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring  
       - name: make-lint
         run: |
              make lint
